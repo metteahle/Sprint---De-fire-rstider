@@ -1,0 +1,186 @@
+/**
+ * projekt: Sprint Uge 38
+ * fil: css/style.css
+ **/
+
+/* Google fonts (NB: load før :root) */
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;500&display=swap');
+
+/* font-family: 'Zilla Slab', serif; TYND */
+/*font-family: 'Zilla Slab', serif; TYK */
+
+
+/* Variabler: genbruges og gør designvalg enkle */
+:root {
+  /* farver */
+  --green: #bdc486;
+  --lyspink: #eae1df;
+  --beige: #f1e8cf;
+  --grey: #afa5a3;
+  --pink: #b27d83;
+  --lysgrey: #eaece5;
+  --sort:#000000;
+  --hvid:#ffffff;
+
+  /* fonte */
+  --font: 'Zilla Slab', serif; /* brødtekst */
+  --displayH: 'Zilla Slab', serif; /* overskrifter */
+
+
+  /* teksturer ("fliselagte baggrunde") */
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.image-container{
+  box-sizing: border-box;
+}
+
+/* Baggrundsfarve */
+body {
+  background-color: var(--hvid);
+  font-family: var(--font);
+}
+
+/* Typografi */
+h1 {
+  font-family: var(--displayH);
+}
+
+/* Layout: Flexbox */
+
+/* navigationsbar*/
+ul {
+  border-top: 30px solid #ffffff;
+  border-bottom: 30px solid #ffffff;
+  text-align: left;
+}
+
+nav ul li{
+  list-style-type: none; /*fjen dutter ved menupunkter */
+  word-spacing: 70px;
+
+}
+a:link, a:visited {
+  color: var(--sort);
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+li{
+  display: inline;
+}
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+justify-content: space-around;
+}
+
+.center {
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+}
+
+.navbar{
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: 20px;
+}
+
+#nav-list{
+   list-style-type: none;
+}
+
+#nav-list li{
+   display: inline;
+   font-size: 17px;
+   margin: 1px;
+
+}
+.logo-img{
+	float: left;
+	margin: 0px 15px 15px 0px;
+}
+/* Billeder*/
+
+div class="row"{
+  width: 30px;
+}
+
+.column {
+  float: left;
+  width: 40%;
+  padding: 5px;
+  border: 65px solid white;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+
+}
+
+/* Bottom right text på det grønne billede øverst */
+
+.Row {
+  padding-top:10px;
+  padding-left: 20 px;
+  padding-right: 20 px;
+  padding-bottom: 15 px;
+  border: 50px solid white;
+}
+
+.container {
+  position: absolute;
+  bottom: 25%;
+  right:auto;
+  left: auto;
+}
+
+#Tekst {
+  color: var(--hvid);
+  font-family: displayH;
+}
+
+#aaa {
+  text-align: center;
+}
+
+
+.align {
+  float: left;
+  width: 1%;
+  padding: 10px;
+}
+
+/* Footer*/
+#Hej {
+  background-color: var(--lyspink);
+  color: var(--lyspink);
+}
+
+#Slut {
+  color: var(--hvid);
+}
+
+footer {
+  text-align: center;
+  background-color: var(--lyspink);
+  letter-spacing: 1px;
+}
